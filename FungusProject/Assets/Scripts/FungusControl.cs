@@ -14,9 +14,9 @@ public class FungusControl : MonoBehaviour
 
         foreach (Block block in blocks) {
             Debug.Log(block.CommandList.Count);
+                //block.CommandList[0].BroadcastMessage("Hi");
+            }
 
-            //block.CommandList[0].BroadcastMessage("Hi");
-        }
 
     }
 
