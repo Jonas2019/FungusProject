@@ -13,7 +13,7 @@ public class FungusControl : MonoBehaviour
         var blocks = MyFlowchart.GetComponents<Block>();
 
         foreach (Block block in blocks) {
-            //Debug.Log(block.CommandList.Count);
+            Debug.Log(block.CommandList.Count);
                 //block.CommandList[0].BroadcastMessage("Hi");
             }
 
