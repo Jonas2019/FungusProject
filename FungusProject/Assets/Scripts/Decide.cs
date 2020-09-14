@@ -2,13 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+
 public class Decide : MonoBehaviour
 {
     public Flowchart flowchart;
 
     void Start()
     {
-        
+        bool BPois = Random.Range(0, 2) == 1;
+        bool CMed = Random.Range(0, 2) == 1;
+        Debug.Log(BPois);
+        Debug.Log(CMed);
+        flowchart.SetBooleanVariable("BPoison",BPois);
+        flowchart.SetBooleanVariable("CMed",CMed);
     }
 
     // Update is called once per frame
