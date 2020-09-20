@@ -10,6 +10,7 @@ public class FungusControl : MonoBehaviour
     public ControlAudio MyAudio;
     void Start()
     {
+
         var blocks = MyFlowchart.GetComponents<Block>();
 
         foreach (Block block in blocks) {
@@ -19,6 +20,11 @@ public class FungusControl : MonoBehaviour
 
 
     }
+    //List<Command> commands = MyFlowchart.SelectedCommands;
+    //    foreach (Command cmd in commands) {
+            
+    //    }
+
 
 
 
